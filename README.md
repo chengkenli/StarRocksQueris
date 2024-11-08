@@ -3,7 +3,7 @@
 ## Support
 
 ```
-这里不做过多的介绍了。
+这里不做过多的介绍了。工具使用golang语言，除需要一个MySQL，无其他依赖。
 看StarRocks社区：https://forum.mirrorship.cn/t/topic/15689
 
 ```
