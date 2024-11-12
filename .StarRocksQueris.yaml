@@ -1,0 +1,23 @@
+
+configdb:
+  Host: 127.0.0.1
+  Port: 3306
+  User: root
+  Pass: **************1.
+  Schema:
+#   程序基本信息表
+    App: chengken.sr_slow_query_config
+    Connect: chengken.sr_slow_query_manager
+    Robot: chengken.sr_slow_query_robot
+
+logger:
+  LogPath: /u/users/svccndlopsns/chengken/log/StarRocksSupport
+  LogLevel: 0
+  MaxSize: 0
+  MaxBackups: 0
+  MaxAge: 0
+  Compress: false
+  JsonFormat: false
+  ShowLine: true
+  LogInConsole: true
+
