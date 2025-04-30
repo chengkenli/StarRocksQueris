@@ -1,0 +1,44 @@
+
+configdb:
+  Host: 127.0.0.1
+  Port: 3306
+  User: root
+  Pass: **************1.
+  Schema:
+#   程序基本信息表
+    App: chengken.starrocks_information_slowconfig
+    Connect: chengken.starrocks_information_connections
+    Robot: chengken.starrocks_information_larkrobot
+#    短查询保障，资源隔离short query类型语句的保障，struct请参考exec.sql
+    ShortQuery: chengken.starrocks_information_shortconfig
+#    starrocks_information_slowconfig表中slow_query_metaapp字段代表元数据名称，物理机与用户关联表
+#    表建在StarRocks集群中，struct请参考exec.sql
+    IpSystem: ops.ops_starrocks_ip_system
+#    starrocks_information_slowconfig表中slow_query_metaapp字段代表元数据名称，内部人员飞书信息表
+#    表建在StarRocks集群中，struct请参考exec.sql
+    LarkMeta: ops.feishu_user_information
+
+# 当运行调试模式时，可以将告警对接到下面的飞书群
+# 从而不走global设置
+mode:
+  Debug: 100e4fb7-7225-484a-a63e-a91092d5831a
+  Info: ddf001a4-03c6-4178-b4fa-e2d0bd22a59a
+
+# 主题域
+domain:
+  AppKey: 1a358123246c0ab6
+  Sign: YjRiZTMxOTg1ZTE3ZjgxNDVjNGE0NWUxODViYjg4N2EzZWYwODJjYWNmMWExZDkwMWI5MmY1ZTBkOTkwNDIxYg==
+  WorksheetId: 64a515452d3d4fc5eb0c1514
+  Uri: https://lcap.cn.wal-mart.com/api/v2/open/worksheet/getFilterRows
+
+logger:
+  LogPath: /u/users/svccndlopsns/chengken/log/StarRocksSupport
+  LogLevel: 0
+  MaxSize: 0
+  MaxBackups: 0
+  MaxAge: 0
+  Compress: false
+  JsonFormat: false
+  ShowLine: true
+  LogInConsole: true
+
