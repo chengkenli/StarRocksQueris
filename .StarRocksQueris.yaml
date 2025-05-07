@@ -10,7 +10,7 @@ configdb:
     Connect: chengken.starrocks_information_connections
     Robot: chengken.starrocks_information_larkrobot
 #    短查询保障，资源隔离short query类型语句的保障，struct请参考exec.sql
-    ShortQuery: chengken.starrocks_information_shortconfig
+#    ShortQuery: chengken.starrocks_information_shortconfig
 #    starrocks_information_slowconfig表中slow_query_metaapp字段代表元数据名称，物理机与用户关联表
 #    表建在StarRocks集群中，struct请参考exec.sql
 #    IpSystem: ops.ops_starrocks_ip_system
