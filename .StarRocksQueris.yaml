@@ -13,23 +13,23 @@ configdb:
     ShortQuery: chengken.starrocks_information_shortconfig
 #    starrocks_information_slowconfig表中slow_query_metaapp字段代表元数据名称，物理机与用户关联表
 #    表建在StarRocks集群中，struct请参考exec.sql
-    IpSystem: ops.ops_starrocks_ip_system
+#    IpSystem: ops.ops_starrocks_ip_system
 #    starrocks_information_slowconfig表中slow_query_metaapp字段代表元数据名称，内部人员飞书信息表
 #    表建在StarRocks集群中，struct请参考exec.sql
-    LarkMeta: ops.feishu_user_information
+#    LarkMeta: ops.feishu_user_information
 
 # 当运行调试模式时，可以将告警对接到下面的飞书群
 # 从而不走global设置
-mode:
-  Debug: xxx
-  Info: xxx
+#mode:
+#  Debug: xxx
+#  Info: xxx
 
 # 主题域
-domain:
-  AppKey: xxx
-  Sign: xxx
-  WorksheetId: xxx
-  Uri: xxx
+#domain:
+#  AppKey: xxx
+#  Sign: xxx
+#  WorksheetId: xxx
+#  Uri: xxx
 
 logger:
   LogPath: /u/users/svccndlopsns/chengken/log/StarRocksSupport
